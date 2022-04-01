@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px green solid; */
+    /* width: 100%; */
+    min-width: 50%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+    margin: auto;  
+    padding: 1%;
+}
+/*CABECERA*/
+header{
+    
+    width: 100%;
+    height: 160px;
+background-color: black;  
+}
+
+.logo{
+    /* border: 2px rgb(0, 110, 255) solid; */
+    /* padding: 1%; */
+    min-height: 40px;
+    max-height: 100px;
+}
+
+.logo img{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: gold;
+    font-size: 240%;
+    text-shadow: 0.2vw 0.2vh 0 #a2a2a2;
+    margin-left: 2vw;
+    align-self: center;
+
+}
+
+
+.flex_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+    max-width: 80%;
+    /* border: 2px plum solid; */
+}
+
+@media (max-width:280px) {
+
+    h1 {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: gold;
+        font-size: 120%;
+        text-shadow: 0.2vw 0.2vh 0 #a2a2a2;
+        margin-left: 2vw;
+        align-self: center;
+    
+    }
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    /* min-width: 20%;
+    max-width: 50%; */
+}
+
+
+.menu a{
+    text-decoration: none;
+    padding-left: 1%;
+    color: white;
+    font-size: 16px;
+}
+
+.menu a:hover{
+    color: gold;
+}
+/*FIN DE CABECERA*/
+
+
+/*BANNER PRINCIPAL*/
+
+.banner{
+width: 100%;
+height: 900px;
+background-image: url(../img/fotofundacion.jpg);
+background-position: center;
+background-size: cover;
+    
+}
+
+.banner > div{
+width: 100%;
+height: 100%;
+background-color: rgba(209, 219, 189, 0.3);
+
+}
+
+.llamada-accion{
+text-align: center;
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+height: 100%;
+
+}
+
+.llamada-accion p{
+font-size:  18px;
+color: white;
+text-transform: uppercase;
+margin-bottom:  20px;
+}
+
+.llamada-accion h2{
+font-size: 42px;
+color: black;
+width: 100%;
+padding: 55px 0;
+background-color: rgba(255, 255, 255, 0.4);
+max-width: 470px;
+
+}
+
+.llamada-accion a{
+font-size: 18px;
+text-decoration: none;
+color: white;
+padding: 10px 0px;
+background-color: rgba(0,0,0,0.47);
+margin-top: 35px;
+
+transition: all 0.5s ease-in-out;
+}
+
+.llamada-accion a:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+/*FIN BANNER PRINCIPAL*/
+
+/*SECCION DE BIENVENIDA*/
+
+
+
+.container{
+background-color: white;
+display: flex;
+padding-bottom: 30px
+
+
+
+}
+/*fin SECCION DE BIENVENIDA*/
+
+/*SECCION SOBRE NOSOTROS*/
+
+
+
+.nosotros{
+    width: 100%;
+    background-color: #c7c5c5 ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    padding: 5%;
+}
+
+.nosotros img{
+width: 340px;
+height: 300px;
+border-radius: 20px;
+display: block;
+margin: 20px;
+
+
+}
+
+
+
+
+.conocenos{
+    text-align: center;
+    padding: 15px 0px;
+    max-width: 570px;
+}
+
+.conocenos p:nth-child(1){
+    font-size: 32px;
+    color: black;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+.conocenos h3{
+padding-top: 20px;
+padding-bottom: 30px;
+color: black;
+font-size: 22px;
+
+}
+
+.conocenos p:nth-child(3){
+font-size: 20px;
+color: black;
+padding-bottom: 25px;
+
+}
+
+.conocenos p:nth-child(4){
+font-size: 18px;
+color: black;
+padding-bottom: 20px;
+}
+
+.conocenos a{
+    font-size: 15px;
+    color: black;
+}
+
+@media all and (min-width:769px){
+/* .nosotros{
+padding-top: 80px;    
+}     */
+.foto-equipo{
+margin-right: 30px;
+}
+.conocenos{
+padding-left: 30px;
+text-align: left;
+
+}
+}
+
+/* FIN SECCION SOBRE NOSOTROS*/
+
+/*PIE DE PAGINA*/
+
+.top-footer{
+    background-color: #646464;
+    height: 25px;
+}
+.center-footer{
+    
+    background-color: black;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+} 
+
+.center-footer .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.center-footer .widget{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    color: white;
+
+    max-width: 270px;
+    margin: 0 auto;
+}
+.bottom-footer{
+    background-color: #7a7a7a;
+    height: 25px;
+}
+.center-footer .widget h4{
+font-size: 18px;
+padding-bottom: 35px;
+}
+.center-footer .widget p{
+font-size: 14px;
+
+}
+
+.bottom-footer p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.top-footer{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+
